@@ -1,0 +1,123 @@
+CSS can select HTML elements by their type, class, and ID. CSS classes and
+ IDs have different purposes,
+ Specificity is the order by which the browser decides which CSS styles will be displayed.
+  A best practice in CSS is to style elements while using the lowest degree of specificity
+  so that if an element needs a new style, it is easy to override.
+
+IDs are the most specific selector in CSS, followed by classes, and finally, type.
+For example, consider the following HTML and CSS:
+
+Chaning is good
+<a href="#introduction">Introduction</a> this is when you click it takes you to the exact place where the info is at in the page
+<div id="introduction"><!--#example of how to link within the same page. --> </div>
+
+body {
+  /* Old browsers */
+  background: #FFC0CB; /* Fallback solid pink */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #FF69B4, #FFC0CB); /* Pink gradient */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #FF69B4, #FFC0CB); /* Pink gradient */
+  margin: 0;
+  padding: 0;
+}
+
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">
+    <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpeg" /></a>
+
+<img src="img/WhatsApp Image 2024-05-31 at 23.38.20.jpeg" />
+<video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4"
+                       width="320" height="240" controls>Video not supported</video>
+
+ <a href="./aboutme.html">Me</a>
+
+ <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
+
+
+ <img src="img/profile.jpeg" class="profile-pic" alt="Wafa's Picture"/>
+
+
+
+
+
+
+ <div class="container" >
+     <img id="profile-pic" src="img/pic3.png"  alt="Wafa's Picture"/>
+    <div class="text-container">
+        <h2 class="text-container p"> Wafa Almanasrah <br> Business Informatics Bsc</h2>
+        <h3>A student at the Universty of Debrecen and a holder of the Hungarian Stipendium Scholarship.</h3>
+        <br>
+        <p class="text-container"> As I am expected to be
+        graduating by Jan 2026 I am looking for an internship where I can grow my skills and learn more and later secure
+        a full time position. As I wait for that chance in this super compettive market, and after many many rejections,
+        I decided that I need to do make this portfolio and start adding small projects that i work on
+        especially about Data Analytics. my journy of slef develpment has to continue and
+        that is why i decided to build this Portfolio and enjoy the process as i grow and experiment here
+        who
+    </p>
+
+        <img class="pic" src="img/profile.jpeg" alt="Wafa"/>
+
+
+
+
+
+        <div class="left-text">Encantada 🙋</div>
+
+
+
+        As a Business Informatics student, I decided to learn HTML
+            and CSS to create my first portfolio.<br>Here I will show my continuous progress as I learn new skills
+        in Web-development and  Data Analysis.
+
+
+
+        FROM HERE
+
+
+        <div class="containerr" >
+     <img class="pic" src="img/WhatsApp%20Image%202024-07-22%20at%2011.25.43.jpeg" alt="Wafa"/>
+    <div class="text-container">
+        <h2 class="text-container "> Wafa Almanasrah<br> Business Informatics Bsc.</h2>
+        <h3 class="text-container">A student at the Universty of Debrecen and a holder of the Hungarian Stipendium Scholarship.</h3>
+        <br>
+        <p class="text-container">I have been gaining valuable experience in customer service roles
+            since 2018. Now, I am seeking professional training related to my major to learn and apply
+            new skills and secure a full-time position. In the meantime, I'm focusing on gaining new
+            skills and enjoying the thrill of working with what I learn. This portfolio, as simple as it is,
+            has been an incredible experience to create. Seeing something I envisioned appear on screen is
+            satisfying, and it has helped me explore and learn new things about HTML and CSS along the way.
+            <br>As my main career focus is on Data, I am learning more about data analysis, modeling,
+            and visualization,  including tools like Power BI. Soon, I will be adding the projects I
+            am working on here.
+            <br> <span style="color: #7a1873; font-size: 20px; margin-top: 20px;font-family:Poppins ">
+        You're welcome to reach out to me here:</span>
+            <div class="social-media-links">
+  <a  href="https://www.linkedin.com/in/wafa-almanasrah-3a005426a/   " target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a  href="mailto:almanasrahwafa@outlook.com">
+      <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+    </p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+Until Here
+
+
+
+
+<li><a href="projects.html">Projects</a></li>
+<li><a href="projects.html">Projects</a></li>

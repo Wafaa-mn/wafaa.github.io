@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&display=swap');
+
+body {
+  background: snow;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.navbar {
+  list-style-type: none;
+  background-color: snow;
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+
+}
+
+.navbar li a {
+  display: block;
+
+  text-align: center;
+  font-size: 11px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat";
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: lightpink;
+  transition: color 0.3s;
+}
+
+
+.navbar li a:visited,
+.navbar li a:active {
+  color: brownl;
+  font-weight: bold;
+}
+
+
+
+.element {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><text y="50%" font-size="50" text-anchor="middle">🌸</text></svg>');
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+
+.animated-text {
+  font-size: 2em;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.welcome {
+  color: #7a1873;
+  font-size: 60px;
+  text-align: left;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 1em;
+}
+
+
+.animated{
+    font-size: 1em;
+    animation: slide-right 2s ease-in-out;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.style {color:#7a1873;  /*#8b006b*/
+  font-size: 20px;
+  text-align: left;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 1em;
+  margin-left: 40px;
+}
+
