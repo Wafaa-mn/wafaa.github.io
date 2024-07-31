@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&display=swap');
 
-
 body {
   background: snow;
   margin: 0;
@@ -13,136 +12,91 @@ body {
   background-color: snow;
   overflow: hidden;
   display: flex;
-  justify-content: right;
+  justify-content: center; /* Center the navbar items */
   margin: 0;
   padding: 0;
 }
 
 .navbar li {
-  margin: 0 20px;
+  margin: 0 10px; /* Adjusted for better spacing */
 }
 
 .navbar li a {
   display: block;
   color: #7a1873;
   text-align: center;
-  font-size: 11px;
-  padding: 10px 10px;
+  font-size: 14px; /* Adjusted for better readability */
+  padding: 10px;
   text-decoration: none;
   font-weight: bold;
   font-family: "Montserrat";
   transition: color 0.3s;
 }
 
-
 .navbar li a:visited, .navbar li a:active {
     color: black;
     font-weight: bold;
 }
 
-
 .navbar li a:hover {
   background-color: lightpink;
 }
 
-/*
-#profile-pic {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin-left: 100px;
-  margin-bottom: 100px;
-  margin-top: 0px;
-  border: none;
-
-
-}
-*/
-
-
 .pic {
-  width: 350px;
+  width: 100%; /* Make image responsive */
+  max-width: 350px; /* Max width for large screens */
   height: auto;
   display: block;
-  margin-left: 60px;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin: 20px auto; /* Center the image */
   border: none;
   border-radius: 10%;
-  align-items: center;
-
-
 }
 
 .container {
     display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
-    justify-content: left;
-    margin-top: 15px;
-    margin-left: 0px;
-  background-size: cover;
-
-
+    justify-content: center;
+    margin: 15px auto; /* Center container */
+    background-size: cover;
 }
-/*
-.container-intro {
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-}
-*/
-
-
 
 .text-container {
-    max-width: 750px;
-    margin-left: 20px ;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: initial;
-
+    max-width: 90%; /* Ensure text container fits well on smaller screens */
+    margin: 0 auto;
+    text-align: center; /* Center text on smaller screens */
 }
 
 .text-container h2 {
-    font-size: 30px;
+    font-size: 24px; /* Adjusted for better responsiveness */
     font-family: "Montserrat";
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0;
     font-weight: lighter;
-    text-align: left;
     color: #061031;
 }
 
 .text-container h3 {
-    font-size: 16px;
+    font-size: 14px; /* Adjusted for better responsiveness */
     font-family: "Montserrat";
-    margin-bottom: 0px;
-    margin-top: 0;
+    margin: 0;
     font-weight: lighter;
-    text-align: initial;
-    color:#061031;
+    color: #061031;
 }
 
 .text-container p {
-    font-size: 14px;
-    font-family: "Montserrat";
-    max-width: 740px;
-    line-height: 1.5;
-    color:#061031;
-    justify-content: center;
-    text-align: initial;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 12px; /* Adjusted for better readability */
     font-family: "Poppins";
+    max-width: 100%;
+    line-height: 1.5;
+    color: #061031;
+    margin: 0;
+    text-align: center; /* Center text on smaller screens */
 }
-
 
 .social-media-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
-
+  gap: 15px; /* Increased gap for better spacing */
 }
 
 .social-media-links a {
@@ -153,9 +107,8 @@ body {
 }
 
 .social-media-links a:hover {
-  color: #7a1873; /* #0073e6 */
+  color: #7a1873;
 }
-
 
 .left-text {
     position: absolute;
@@ -183,7 +136,7 @@ body {
     }
     100% {
         left: 50%;
-        transform: translateY(0) rotate(360deg); /* Rotate 180 degrees */
+        transform: translateY(0) rotate(360deg);
     }
 }
 
@@ -208,6 +161,23 @@ body {
     }
 }
 
-
-
-
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+    .navbar li {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+    .text-container {
+        max-width: 100%;
+    }
+    .pic {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Adjust max-width */
+    }
+    .character, .characterr {
+        width: 40px;
+        height: 40px;
+    }
+}
